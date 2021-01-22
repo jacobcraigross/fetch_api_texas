@@ -1,4 +1,4 @@
-fetch('texas.jpg').then(response => {
+fetch('texas.jpg').then(response => { // texas.jpg comes from the root directory. 
     return response.blob();
 }).then(blob => {
     document.getElementById('texxas').src = URL.createObjectURL(blob);
